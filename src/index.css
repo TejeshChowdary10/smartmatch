@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@keyframes fade-in {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-out forwards;
+  }
+  body {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+
+  @layer utilities {
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 13ch;
+      }
+    }
+  
+    @keyframes blink {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  
+    .animate-typing {
+      animation: typing 1.5s steps(13, end) forwards;
+    }
+  }
+  @font-face {
+    font-family: 'Playlist Script';
+    src: url('./fonts/PlaylistScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

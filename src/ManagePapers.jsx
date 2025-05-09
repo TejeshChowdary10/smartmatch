@@ -63,7 +63,7 @@ const ManagePapers = () => {
   <td className="py-2">{paper.paper_id}</td>
   <td className="py-2">{paper.title}</td>
   <td className="py-2">{paper.reviewer_username || '-'}</td>
-  <td className="py-2">{paper.status || '-'}</td>
+  <td className="py-2">{paper.status || 'Pending'}</td>
   <td className="py-2">{paper.decision || '-'}</td>
   <td className="py-2">{paper.match_score ? `${paper.match_score}%` : '-'}</td>
 </tr>

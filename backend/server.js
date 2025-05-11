@@ -44,14 +44,12 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // PostgreSQL connection
 const pool = new Pool({
-  user: process.env.PGUSER,
-  host: process.env.PGHOST,
-  database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
-  port: process.env.PGPORT,
-  ssl: { rejectUnauthorized: false }, // required for Render
+  user: 'postgres',
+  host: 'localhost',
+  database: 'smartmatch',
+  password: 'Chinnu62@',
+  port: 5432,
 });
-
 // Temporary stores
 let emailVerifications = {}; // key: email, value: 4-digit code
 const resetTokens = new Map(); // key: token, value: email

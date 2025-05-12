@@ -173,9 +173,12 @@ const Welcome = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400">
       <div className="w-full max-w-6xl mx-auto p-6 flex rounded-3xl bg-white shadow-xl overflow-hidden">
-        <div className="w-1/2 bg-slate-900 text-white p-10 flex flex-col justify-center items-center relative">
-          <h1 className="text-4xl font-bold mb-2">SmartMatch</h1>
-          <p className="text-gray-300 mb-4">Powered by AI Technology</p>
+<div className="w-1/2 bg-slate-900 text-white p-10 flex flex-col justify-center items-center relative">
+  <img
+    src="logo.jpg" // Replace with the correct path if you're using a public folder or import
+    alt="SmartMatch Logo"
+    className="w-40 h-40 mb-4 object-contain" // Adjust size as needed
+  />
           <motion.div animate={{ opacity: [0, 1, 0] }} transition={{ duration: 3, repeat: Infinity }} className="absolute bottom-10 text-2xl font-semibold">
             Welcome to SmartMatch
           </motion.div>
